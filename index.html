@@ -1,29 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- head section containing the title and meta information of the Home Page here -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <!-- Add CSS file links or additional meta information here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the Home Page of the Theme Park Website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+    <meta name="keywords" description="Theme Park" />
+    <meta name="author" content="web-development-group18" />
+    <title>THEME PARK</title>
 </head>
 <body>
-    <!-- Add content here -->
+    <!-- body section here -->
     <header>
-        <!-- Header content -->
+        <!-- header of the Home Page containing the Theme Park brand logo, nav menu and bookings indicator here -->
+            <h2 class="brand-logo">THEME PARK</h2>
+            <div class="nav-menu">
+                <a class="nav-btn" href="/">
+                    <div class="nav-btn-text">Home</div>
+                </a>
+                <a class="nav-btn" href="/attractions_events.html">
+                    <div class="nav-btn-text">Attractions & Events</div>
+                </a>
+                <a class="nav-btn" href="/park_info.html">
+                    <div class="nav-btn-text">Park Information</div>
+                </a>
+            </div> 
+            <div class="bookings-indicator">
+                <span class="bookings-text">Bookings (5)</span>
+            </div>
     </header>
 
-    <nav>
-        <!-- Navigation menu content -->
-    </nav>
-
     <main>
-        <!-- Main content section content -->
+        <!-- body content containing 5 main sections here -->
+        <!-- Section 1- containing our Theme Park banner and slogan, and shortcut button to buy tickets -->
+        <section>
+            <h1>THEME PARK</h1>
+            <div class="banner-text">
+                <p>
+                    <q>A short text to gain interest</q>
+                </p>
+            </div>
+            <div class="buy-tickets-btn">
+                <a href="#">
+                    <button>Get Tickets</button>
+                </a>
+            </div>
+        </section>
+        <!-- Section 2 - displaying reviews/comments from media sources -->
+        <section>
+            <div class="section-media-review">
+                <h3><q>Review from a well trusted source like newspaper or famous magazine.</q></h3>
+                <p>Maria Lopez, VP of Design at Meshery</p>
+            </div>
+        </section>
+        <!-- Section 3 - showcasing most popular attractions and events -->
+        <section>
+            <div class="section-popular-attractions-events">
+                <h2>BEST RIDES IN THE CITY</h2>
+                <p>
+                    <q>If you don't try this app, you won't become the superhero you were meant to be</q>
+                </p>
+                <div class="attractions-events-gallery">
+                    <div class="attractions-events-box">
+                        <div class="attractions-events-image"></div>
+                        <div class="attractions-events-text">Special Ride 1</div>
+                        <a class="see-more-btn" href="#">
+                            <div class="see-more-text">See More</div>
+                        </a>
+                    </div>
+                    <div class="attractions-events-box">
+                        <div class="attractions-events-image"></div>
+                        <div class="attractions-events-text">Special Ride 2</div>
+                        <a class="see-more-btn" href="#">
+                            <div class="see-more-text">See More</div>
+                        </a>
+                    </div>
+                    <div class="attractions-events-box">
+                        <div class="attractions-events-image"></div>
+                        <div class="attractions-events-text">Special Event 1</div>
+                        <a class="see-more-btn" href="#">
+                            <div class="see-more-text">See More</div>
+                        </a>
+                    </div>
+                    <div class="attractions-events-box">
+                        <div class="attractions-events-image"></div>
+                        <div class="attractions-events-text">Special Event 2</div>
+                        <a class="see-more-btn" href="#">
+                            <div class="see-more-text">See More</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 4 - sharing visitors' comments/experience -->
+        <section>
+            <div class="section-visitor-comment">
+                <h3><q>Guest Comments</q></h3>
+                <p>Maria Lopez, VP of Design at Meshery</p>
+            </div>
+        </section>
+        <!-- Section 5 - containing the bottom menu and the social media links of the Theme Park -->
+        <section>
+            <div class="bottom-section">
+                <div class="bottom-menu">
+                    <a class="nav-btn" href="/">
+                        <div class="nav-btn-text">Home</div>
+                    </a>
+                    <a class="nav-btn" href="/attractions_events.html">
+                        <div class="nav-btn-text">Attractions & Events</div>
+                    </a>
+                    <a class="nav-btn" href="/park_info.html">
+                        <div class="nav-btn-text">Park Information</div>
+                    </a>
+                </div>
+                <div class="bottom-brand-logo">
+                    <h3>THEME PARK</h3>
+                </div>
+            </div>
+            <hr />
+            <div class="social-media-box">
+                <div class="social-media-icon">Facebook</div>
+                <div class="social-media-icon">Twitter</div>
+                <div class="social-media-icon">Instagram</div>
+                <div class="social-media-icon">YouTube</div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <!-- Footer content -->
+        <!-- footer content here-->
+        <div class="footer-content">2010 - 2020 Privacy - Terms</div>
+        <!-- back to top shortcut button here-->
+        <div class="back-to-top-btn">
+            <a href="#">
+                <button>
+                    <span>Back to Top</span>
+                </button>
+            </a>
+        </div>
     </footer>
 
-    <!-- Add JavaScript file links or additional scripts here -->
+    <!-- JavaScript file links or additional scripts (if any) to be inserted here -->
 </body>
 </html>
