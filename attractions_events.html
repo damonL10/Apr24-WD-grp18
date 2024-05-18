@@ -2,26 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Park Information Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the Home Page of the Theme Park Website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+    <meta name="keywords" description="Theme Park" />
+    <meta name="author" content="web-development-group18" />
+    <title>Attractions & Events</title>
     <!-- Add CSS file links or additional meta information here -->
 </head>
 <body>
-    <!-- Add content here -->
-    <header>
-        <!-- Header content -->
+        <header>
+        <!-- header of the Home Page containing the Theme Park brand logo, nav menu and bookings indicator here -->
+            <h2 class="brand-logo">THEME PARK</h2>
+            <div class="nav-menu">
+                <a class="nav-btn" href="/">
+                    <div class="nav-btn-text">Home</div>
+                </a>
+                <a class="nav-btn" href="/attractions_events.html">
+                    <div class="nav-btn-text">Attractions & Events</div>
+                </a>
+                <a class="nav-btn" href="/park_info.html">
+                    <div class="nav-btn-text">Park Information</div>
+                </a>
+            </div> 
+            <div class="bookings-indicator">
+                <span class="bookings-text">Bookings (5)</span>
+            </div>
     </header>
-
-    <nav>
-        <!-- Navigation menu content -->
-    </nav>
-
     <main>
         <!-- Main content section content -->
+
+        <!-- Top section -->
+        <section>
+            <h1>Attractions & Events</h1>
+            <div class="Filter-buttons"> 
+               <p>Events - <time datetime="2024-05-21 09:00">May 21, 2024</time>.</p>
+                <button class="filterSet">Default</button>
+                <button class="filterSet">A-Z</button>
+                <button class="filterSet">List View</button>
+            </div>
+        </section>
+        <!-- Attractions section -->
+        <section>
+            <h2>Attractions</h2>
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 1</H3> <a id="attraction1"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 2</H3> <a id="attraction2"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+            
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 3</H3> <a id="attraction3"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 4</H3> <a id="attraction4"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 5</H3> <a id="attraction5"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 6</H3> <a id="attraction6"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 7</H3> <a id="attraction7"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 8</H3> <a id="attraction8"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Attractions">
+            <br>
+            <img src="Attraction1.jpg" alt="Roller coaster">
+            <H3> Attraction 9</H3> <a id="attraction9"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div> 
+            
+        </section>
+        
+        <section>
+            <h2>Live Events</h2>
+            <div class="Events">
+            <br>
+            <img src="Event1.jpg" alt="Fire Show">
+            <H3> Event 1</H3> <a id="Event1"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+            
+            <div class="Events">
+            <br>
+            <img src="Event2.jpg" alt="Event2">
+            <H3> Event 2</H3> <a id="Event2"</a>
+            <time>8:00 AM to 9:00 PM</time>
+            </div>
+
+            <div class="Current-Booking">
+            <h4><b>Current Booking</b></h4>
+            <ul>
+                <li> Number of Adults</li>
+                <li> Number of Children</li>
+                <br>
+                <li> SubTotal</li>
+                <li> Tax</li>
+                <li> <b>Total</b></li>
+            </ul>
+            <button type="button" onclick="alert('Proceeding to payment portal...')">Continue to payment</button>
+            </div>
+        </section>        
     </main>
 
     <footer>
-        <!-- Footer content -->
+        <!-- footer content here-->
+        <div class="footer-content">2010 - 2020 Privacy - Terms</div>
+        <!-- back to top shortcut button here-->
+        <div class="back-to-top-btn">
+            <a href="#">
+                <button>
+                    <span>Back to Top</span>
+                </button>
+            </a>
+        </div>
     </footer>
 
     <!-- Add JavaScript file links or additional scripts here -->
