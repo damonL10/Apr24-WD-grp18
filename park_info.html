@@ -1,29 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- head section containing the title and meta information of the Home Page here -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attractions and Events Page</title>
-    <!-- Add CSS file links or additional meta information here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about our theme park, read client feedback, check ticket prices and packages, park facilities, safety information, and operation hours." />
+    <meta name="keywords" description="Theme Park" />
+    <meta name="author" content="web-development-group18" />
+    <title>PARK INFORMATION</title>
 </head>
 <body>
-    <!-- Add content here -->
+    <!-- body section here -->
     <header>
-        <!-- Header content -->
+        <!-- header of the Park Information containing the Theme Park brand logo, nav menu and bookings indicator here -->
+            <h2 class="brand-logo">THEME PARK</h2>
+            <div class="nav-menu">
+                <a class="nav-btn" href="index.html">
+                    <div class="nav-btn-text">Home</div>
+                </a>
+                <a class="nav-btn" href="attractions_events.html">
+                    <div class="nav-btn-text">Attractions & Events</div>
+                </a>
+                <a class="nav-btn" href="park_info.html">
+                    <div class="nav-btn-text">Park Information</div>
+                </a>
+            </div> 
+            <div class="bookings-indicator">
+                <span class="bookings-text">Bookings (5)</span>
+            </div>
     </header>
 
-    <nav>
-        <!-- Navigation menu content -->
-    </nav>
-
     <main>
-        <!-- Main content section content -->
+        <!-- body content containing 5 main sections here -->
+
+        <!-- Section 1- Title section  -->
+        <section>
+            <h1>PARK Information</h1>
+            <div class="park-image">   
+                <img class="park-image" src="assets/park_info_assets/park.jpg" alt="Park Image">
+            </div>
+        </section>
+
+        <!-- Section 2 - About Us section  -->
+        <section>
+            <div class="about-us">
+                <h2 class="about-us-title">About Us</h2>
+                <p class="about-us-text">
+                    Our horror themed park was founded in 2007 by John Horror who was bored with the routine design
+                    of theme parks. He had the vision of introducing a change to classic theme park designs. Since 2007
+                    we are serving people of all ages looking for a thrill experience unlike any other.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3 - Testimonial section-->
+        <section>
+            <h2 class="testimonials-title">What our clients have to say</h2>
+            <div class="testimonials-container">
+            　　<div class="testimonial">
+            　　  <p class="testimonial-text"><q>A different experience</q></p>       
+            　　  <img class="testimonial-image" src="assets/park_info_assets/avater.png" alt="Avatar Image">
+            　　  <p class="testimonial-name">Jack Shepard</p>
+            　　  <p class="testimonial-role">Parent</p>
+            　　</div>
+        　　
+            　　<div class="testimonial">
+            　　  <p class="testimonial-text"><q>Terrifying and thrilling at the same time</q></p> 
+            　　  <img class="testimonial-image" src="assets/park_info_assets/avater2.png" alt="Avatar Image">
+            　　  <p class="testimonial-name">Clara Feel</p>
+            　　  <p class="testimonial-role">Parent</p>
+            　　</div>
+        　　
+            　　<div class="testimonial">
+            　　  <p class="testimonial-text"><q>That was the time of my life</q></p>
+            　　  <img class="testimonial-image" src="assets/park_info_assets/avater3.png" alt="Avatar Image">
+            　　  <p class="testimonial-name">Kyle</p>
+            　　  <p class="testimonial-role">Age 9</p>
+            　　</div>
+            </div>
+        </section>
+
+        <!-- Section 4 - Ticket Prices and Packages secion -->
+        <section>
+            <h2>Ticket Prices and Packages</h2>
+            <div class="ticket-options">
+                <div class="ticket-option" id="daily-access">
+                    <h3>Daily access</h3>
+                    <p class="price">$15 <span>per person</span></p>
+                    <ul>
+                        <li>Daily access to all attractions and events</li>
+                        <li>20% discount for kids &lt; 12 </li>
+                        <li>Free admission for kids &lt; 3 </li>
+                    </ul>
+                    <button class="select-button">Select</button>
+                </div>
+        
+                <div class="ticket-option" id="two-day-access">
+                    <h3>2 Days access</h3>
+                    <p class="price">$25 <span>per person</span></p>
+                    <ul>
+                        <li>2 full days access to all attractions and events</li>
+                        <li>20% discount for kids &lt; 12</li>
+                        <li>Free admission for kids &lt; 3</li>
+                    </ul>
+                    <button class="select-button">Select</button>
+                </div>
+        
+                <div class="ticket-option" id="season-pass">
+                    <h3>Season pass</h3>
+                    <p class="price">$279 <span>per month</span></p>
+                    <ul>
+                        <li>Unlimited access to all attractions and events for full season</li>
+                        <li>Additional discounts with the special members card</li>
+                    </ul>
+                    <button class="select-button">Select</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 - Park Facilities section -->
+        <section>
+            <h2 id="park-facilities">Park Facilities</h2>
+            <div class="park-section" id="restaurants">
+                <h3>Restaurants</h3>
+                <p>Themed restaurants for our clients to enjoy during their visit.</p>
+                <ul>
+                    <li>The Haunted House</li>
+                    <li>Ferry of Despair</li>
+                    <li>Elm Street Burgers</li>
+                </ul>
+                <img src="assets/park_info_assets/restauant.jpg" alt="Restaurant Image" class="facility-image">
+            </div>
+        
+            <div class="park-section" id="souvenir-shops">
+                <h3>Souvenir Shops</h3>
+                <p>We have shops that you can visit to immortalize your visit to our park.</p>
+                <img src="assets/park_info_assets/souvenir.jpg" alt="Souvenir Shop Image" class="facility-image">
+            </div>
+        </section>
+
+        <!-- Section 6 - Having a Safe Visit section -->
+        <section>
+            <h2 class="section-title">Having a Safe Visit</h2>
+            <p>Safety is our top priority in our park. Although we try to make sure to provide a safe experiment as much as possible we advise our visitors to follow some advice for a comfortable visit.</p>
+            <ul>
+                <li>Do not leave your kids unattended except for designated playgrounds.</li>
+                <li>Keep your belongings with you all the time.</li>
+                <li>Make sure to see your doctor before your visit if you have any health issues.</li>
+            </ul>
+        </section>
+        
+        <!-- Section 7 - Map and Working hours section -->
+        <section>
+            <div class="map-container">
+                <!-- src path is subject to change -->
+                <img src="assets/park_info_assets/map.jpg" alt="Park Map" class="park-map">
+                <button class="download-map">Download Map</button>
+            </div>
+            <div class="working-hours">
+                <h2>Working Hours</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Caturday</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sundea</td>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <!-- Footer content -->
+        <!-- footer content here-->
+        <div class="footer-content">2010 - 2020 Privacy - Terms</div>
+        <!-- back to top shortcut button here-->
+        <div class="back-to-top-btn">
+            <a href="#">
+                <button>
+                    <span>Back to Top</span>
+                </button>
+            </a>
+        </div>
     </footer>
 
-    <!-- Add JavaScript file links or additional scripts here -->
+    <!-- JavaScript file links or additional scripts (if any) to be inserted here -->
 </body>
 </html>
