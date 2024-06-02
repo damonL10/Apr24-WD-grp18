@@ -91,6 +91,7 @@ h1 {
     background: #E53F71;
     opacity: 0.8;
     border-radius: 10px 25px 10px 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .media-review-container:hover {
@@ -157,6 +158,7 @@ h2 {
     opacity: 0.8;
     border-radius: 10px 25px 10px 25px;
     text-align: center;   
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .visitor-comment-container p {
