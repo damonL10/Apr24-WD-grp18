@@ -1,0 +1,104 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px 70px 70px;
+}
+
+#title {
+    width: 1000px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+.attractions-container {
+    text-align: justify;
+    justify-content: space-evenly;
+    margin: 25px 80px 80px 80px;
+    
+}
+
+.filterSet {
+    background-color: #3F1651;
+    color: #E53F71;
+    justify-content: space-evenly;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.attractions-box  {
+    border-radius: 10px;
+    width: 450px;
+    height: 450px;
+    min-width: 250px;
+    padding: 20px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: #3F1651;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    img {
+    width: 410px;
+    height: 270px;
+    border-radius: 10px;
+    align-items: center;
+    }
+}
+
+.attractions-box a {
+    color: #F89F5B;
+    text-decoration: none;
+}
+
+.live-events-container{
+    display: grid;
+    align-items:flex-start;
+    text-align: left;
+    
+}
+
+.live-events-box {
+    border-radius: 40px;
+    display: flex;
+    width: 900px;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #3F1651;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    justify-content: flex;
+}
+
+.liveEventImg img{
+    width: 400px;
+    height: 250px;
+    display: inline;
+    align-content: space-around;
+    border-radius: 40px;
+}
+.event-details{
+    width:450px;
+    padding:20px;
+}
+
+.event-details a {
+    color: #F89F5B;
+    text-decoration: none;
+}
+
+.current-booking-sticky-box{
+    border-radius: 10px;
+    display: flex;
+    width: 600px;
+    margin-bottom: 20px;
+    background-color: #3F1651;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}

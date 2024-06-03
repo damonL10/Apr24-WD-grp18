@@ -8,6 +8,7 @@
     <meta name="author" content="web-development-group18" />
     <title>Attractions & Events</title>
     <!-- Add CSS file links or additional meta information here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/attractions_events.css">
 </head>
@@ -35,7 +36,8 @@
 
         <!-- Top section -->
         <section>
-            <h1>Attractions & Events</h1>
+            <br>
+            <h1 id="title">Attractions & Events</h1>
             <div class="Filter-buttons"> 
                 <p>Events - <time datetime="2024-05-21 09:00">May 21, 2024</time>.</p>
                 <button class="filterSet">Default</button>
@@ -49,7 +51,6 @@
             <h2>Attractions</h2>
             <div class="attractions-container">
                 <div class="attractions-box">
-                    <br>
                     <img src="assets/attractions_events_assets/roller_coaster.jpeg" alt="Attraction Image">
                     <h3> Attraction 1</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -59,7 +60,7 @@
                 </div>
 
                 <div class="attractions-box">
-                    <br>
+
                     <img src="assets/attractions_events_assets/water_ride.jpg" alt="Attraction Image">
                     <h3> Attraction 2</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -69,7 +70,6 @@
                 </div>
                 
                 <div class="attractions-box">
-                    <br>
                     <img src="assets/attractions_events_assets/carousel.jpg" alt="Attraction Image">
                     <h3> Attraction 3</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -79,7 +79,6 @@
                 </div>
 
                 <div class="attractions-box">
-                    <br>
                     <img src="assets/attractions_events_assets/water_ride.jpg" alt="Attraction Image">
                     <h3> Attraction 4</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -89,7 +88,6 @@
                 </div>
 
                 <div class="attractions-box">
-                    <br>
                     <img src="assets/attractions_events_assets/roller_coaster.jpeg" alt="Attraction Image">
                     <h3> Attraction 5</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -99,7 +97,6 @@
                 </div>
 
                 <div class="attractions-box">
-                    <br>
                     <img src="assets/attractions_events_assets/carousel.jpg" alt="Attraction Image">
                     <h3> Attraction 6</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -107,9 +104,15 @@
                         <div class="attractions-details">Ride Description...</div>
                     </a>
                 </div>
-
                 <div class="attractions-box">
-                    <br>
+                    <img src="assets/attractions_events_assets/carousel.jpg" alt="Attraction Image">
+                    <h3> Attraction 6</h3>
+                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                    <a href="#">
+                        <div class="attractions-details">Ride Description...</div>
+                    </a>
+                </div>
+                <div class="attractions-box">
                     <img src="assets/attractions_events_assets/roller_coaster.jpeg" alt="Attraction Image">
                     <h3> Attraction 7</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -117,9 +120,7 @@
                         <div class="attractions-details">Ride Description...</div>
                     </a>
                 </div>
-
                 <div class="attractions-box">
-                    <br>
                     <img src="assets/attractions_events_assets/water_ride.jpg" alt="Attraction Image">
                     <h3> Attraction 8</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -129,7 +130,6 @@
                 </div>
 
                 <div class="attractions-box">
-                    <br>
                     <img src="assets/attractions_events_assets/carousel.jpg" alt="Attraction Image">
                     <h3> Attraction 9</h3>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
@@ -145,23 +145,36 @@
             <h2>Live Events</h2>
             <div class="live-events-container">
                 <div class="live-events-box">
-                    <br>
+        
+                <div class="liveEventImg">
                     <img src="assets/attractions_events_assets/event.jpg" alt="Live Event Image">
+                    </div>
+                    <div class="event-details">
                     <h3> Event 1</h3>
+                    <br>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                    <br>
                     <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
+                        <div >Events Description...</div>
                     </a>
                 </div>
+                    </div>
+
+
                 
                 <div class="live-events-box">
-                <br>
-                    <img src="assets/attractions_events_assets/event.jpg" alt="Live Event Image">
+                <div class="liveEventImg">
+                <img src="assets/attractions_events_assets/event.jpg" alt="Live Event Image">
+                    </div>
+                    <div class="event-details">
                     <h3> Event 2</h3>
+                    <br>
                     <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                    <br>
                     <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
+                    <div >Events Description...</div>
                     </a>
+                </div>
                 </div>
             </div>
         </section>
@@ -196,6 +209,40 @@
              </table>
              <button type="button" onclick="alert('Proceeding to payment portal...')">Continue to payment</button>
          </aside>
+
+         <section>
+            <div class="bottom-section">
+                <div class="bottom-menu">
+                    <a class="nav-btn" href="index.html">
+                        <div class="nav-btn-text">Home</div>
+                    </a>
+                    <a class="nav-btn" href="attractions_events.html">
+                        <div class="nav-btn-text">Attractions & Events</div>
+                    </a>
+                    <a class="nav-btn" href="park_info.html">
+                        <div class="nav-btn-text">Park Information</div>
+                    </a>
+                </div>
+                <div class="bottom-brand-logo">
+                    <h3>THEME PARK</h3>
+                </div>
+            </div>
+            <hr />
+            <div class="social-media-box">
+                <div class="social-media-icon">
+                    <a href="#" class="fa fa-facebook"></a>     
+                </div>
+                <div class="social-media-icon">
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+                <div class="social-media-icon">
+                    <a href="#" class="fa fa-instagram"></a>      
+                </div>
+                <div class="social-media-icon">
+                    <a href="#" class="fa fa-youtube"></a>   
+                </div>
+            </div>
+        </section>
 
     </main>
 
