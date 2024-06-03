@@ -44,13 +44,16 @@ section {
     margin: 20px;
     background-color: #3F1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    img {
+}
+
+.attractions-box　img {
     width: 410px;
     height: 270px;
     border-radius: 10px;
     align-items: center;
-    }
 }
+
+
 
 .attractions-box a {
     color: #F89F5B;
