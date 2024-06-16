@@ -167,16 +167,14 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#E53F71;
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .social-media-icon:hover {
     opacity: 0.8;
-}
-
-.fa {
-    color:#E53F71;
-    text-decoration: none;
-    font-size: 20px;
+    transition: opacity 150ms;
 }
 
 
