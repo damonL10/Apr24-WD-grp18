@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #9c3587;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: inherit;
     max-width: inherit;
@@ -85,7 +85,6 @@ header .nav-btn .nav-btn-text {
 }
 
 main {
-    margin-top: 140px;
     background-color: #653780;
     color: #FBBEDE;
 }
