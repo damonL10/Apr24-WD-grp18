@@ -27,6 +27,7 @@ section {
 }
 
 .park-image {
+    border-radius: 10px 10px 10px 10px;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -209,7 +210,6 @@ section {
     margin-bottom: 20px;
     background-color: #3F1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    padding: 20px;
 }
 
 .facility-section:hover {
@@ -219,6 +219,7 @@ section {
 .facility-text {
     flex: 1;
     margin-right: 20px;
+    padding: 20px;
     position: relative;
 }
 
@@ -243,14 +244,12 @@ section {
     color: #F89F5B;
 }
 
-.facility-img {
-    order: 2;
-}
 
 .facility-image {
     width: 500px;
     height: auto;
-    
+    order: 2;
+    border-radius: 0 10px 10px 0;
 }
 
 /* Section 6: Having a Safe Visit */
