@@ -102,33 +102,104 @@ h1 {
 }
 
 /* styling of media-review-container contained in media section*/
+
 .media-review-container {
-    margin-top: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
     margin-bottom: 50px;
-    padding: 10px;
-    text-align: center;    
+    position: relative;
     width: 50%;
-    background: #E53F71;
-    opacity: 0.8;
+    height: 0;
+    padding-bottom: 5%;
+    background: #4c4c4c;
     border-radius: 10px 25px 10px 25px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
-.media-review-container:hover {
+.review-block {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    padding-top: 10px;
+    background: #E53F71;
+    border-radius: 10px 25px 10px 25px;
+    text-align: center; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.review-block p {
+    color:#3F1651;
+}
+
+#r1, #r2, #r3 {
+    display: none;
+}
+
+.review-block label {
+    width: 12%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    background:#653780;
+    color: #3F1651;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.fa.fa-arrow-circle-left {
+    left: -90px;
+    font-size: 60px;
+}
+.fa.fa-arrow-circle-right {
+    right: -90px;
+    font-size: 60px;
+}
+
+.review-block-status {
+    width: 100%;
+    height: 11px;
+    bottom: -50%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.review-block-status .dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0, 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: #3F1651;
     opacity: 0.6;
 }
 
-.media-review-container p {
-    color:#3F1651;
+#r1:checked ~ #rb1,
+#r2:checked ~ #rb2,
+#r3:checked ~ #rb3 {
+    z-index: 9;
 }
+
+#r1:checked ~ .review-block-status #dot1,
+#r2:checked ~ .review-block-status #dot2,
+#r3:checked ~ .review-block-status #dot3 {
+    background: #fff;
+}
+
+
+
+/* styling of section-popular-attractions-events contained in attractions & events section */
 
 h2 {
     font-size: 40px;
 }
 
-/* styling of section-popular-attractions-events contained in attractions & events section */
 .section-popular-attractions-events {
     width: 1200px;
+    margin-top: 20px;
     text-align: center;   
 }
 
@@ -147,16 +218,16 @@ h2 {
 .attractions-events-box {
     display: block;
     height: 280px;
-    padding: 18px;
+    padding: 0;
     background: #3F1651;
     border-radius: 10px;
 }
 
 .attractions-events-image img {
-    width: 250px;
+    width: 280px;
     height: 200px;
     object-fit: fill;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .see-more-btn {
@@ -170,19 +241,94 @@ h2 {
     opacity: 0.4;
 }
 
-/* styling of visitor-comment-container contained in visitos' comments section */
-.visitor-comment-container {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 10px;
-    width: 50%;
-    background: #E53F71;
-    opacity: 0.8;
-    border-radius: 10px 25px 10px 25px;
-    text-align: center;   
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+.see-more-text {
+    padding-right: 30px;
 }
 
-.visitor-comment-container p {
+/* styling of visitor-comment-container contained in visitos' comments section */
+
+.visitor-comment-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 50%;
+    height: 0;
+    padding-bottom: 8%;
+    background: #4c4c4c;
+    border-radius: 10px 25px 10px 25px;
+}
+
+.comment-block {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    padding-top: 10px;
+    background: #E53F71;
+    border-radius: 10px 25px 10px 25px;
+    text-align: center; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.comment-block p {
     color:#3F1651;
+}
+
+#rr1, #rr2, #rr3 {
+    display: none;
+}
+
+.comment-block label {
+    width: 12%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    background:#653780;
+    color: #3F1651;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.fa.fa-arrow-circle-left {
+    left: -90px;
+    font-size: 60px;
+}
+.fa.fa-arrow-circle-right {
+    right: -90px;
+    font-size: 60px;
+}
+
+.comment-block-status {
+    width: 100%;
+    height: 11px;
+    bottom: -30%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.comment-block-status .dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0, 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: #3F1651;
+    opacity: 0.6;
+}
+
+#rr1:checked ~ #c1,
+#rr2:checked ~ #c2,
+#rr3:checked ~ #c3 {
+    z-index: 9;
+}
+
+#rr1:checked ~ .comment-block-status #dot1,
+#rr2:checked ~ .comment-block-status #dot2,
+#rr3:checked ~ .comment-block-status #dot3 {
+    background: #fff;
 }
